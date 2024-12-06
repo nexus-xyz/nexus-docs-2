@@ -1,0 +1,14 @@
+{
+  "index": {
+    "theme": {
+      "breadcrumb": false
+    }
+  },
+  "network": {},
+  "zkvm": { "title": "Using the zkVM" },
+  "specs": { "title": "Specifications" },
+  "svg": {
+    "title": "SVG Images",
+    "display": "hidden"
+  }
+}
