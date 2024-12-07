@@ -1,0 +1,83 @@
+---
+title: "Nexus Network CLI"
+description: "Use the Nexus Network CLI to contribute compute to the network"
+---
+
+import { NexusImage as Image } from '../../components/Image'
+import { Tabs, Tab } from '../../components/Tabs'
+
+
+# Nexus Network CLI
+
+The [Nexus Network CLI](https://github.com/nexus-xyz/network-api) is a command-line tool for contributing compute resources to the network.
+
+## Installation
+
+### Quick Install
+For rapid deployment, use our installation script:
+
+```bash
+curl https://cli.nexus.xyz/ | sh
+```
+
+### Manual Installation
+
+#### System Requirements
+Choose your operating system:
+
+<Tabs>
+  <Tab title="Linux">
+    ```bash
+    sudo apt update && sudo apt upgrade
+    sudo apt install build-essential pkg-config libssl-dev git-all
+    ```
+  </Tab>
+  <Tab title="macOS">
+    ```bash
+    brew install git
+    ```
+  </Tab>
+  <Tab title="Windows">
+    1. Install [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install)
+    2. Follow the Linux instructions above
+  </Tab>
+</Tabs>
+
+## Setup & Configuration
+
+### Initial Setup
+1. Run the CLI for the first time
+2. You'll be prompted to accept the [Terms of Use](https://nexus.xyz/terms-of-use)
+3. Configure your Prover ID (see below)
+
+### Prover ID Configuration
+You have two options when configuring your Prover ID:
+
+1. **Link to Web Account** (Recommended)
+   - Get your ID from [beta.nexus.xyz](https://beta.nexus.xyz/)
+   - Enter it when prompted
+   - Your CLI contributions will sync with your web account
+
+2. **Generate Random ID**
+   - Skip the ID prompt
+   - A random ID will be generated
+   - Note: You'll be prompted again on next startup
+
+<Image 
+  src="/images/cli-prover-id.png"
+  alt="CLI Prover ID prompt showing instructions to copy the prover ID from beta.nexus.xyz"
+  width={800}
+  height={400}
+/>
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. **Check Documentation**
+   - Review the [Network FAQ](/network#network-faqs)
+   - Search existing [GitHub Issues](https://github.com/nexus-xyz/network-api/issues)
+
+2. **Get Help**
+   - Join our [Discord Community](https://discord.gg/nexus-xyz)
+   - [Open a new GitHub issue](https://github.com/nexus-xyz/network-api/issues/new) for technical problems
