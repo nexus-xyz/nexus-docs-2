@@ -14,7 +14,7 @@ Welcome to the Nexus developer documentation!
 
 Here you can learn about the Nexus Network and the Nexus zkVM. Nexus is still under active development, but there are already several ways to get involved:
 
-* [Use the zkVM](/zkvm)
+* [Prove programs with the zkVM](/zkvm)
 * [Contribute compute to the network](/network)
 
 ## The Network
@@ -23,26 +23,4 @@ The Nexus Network is a massively-parallelized proof network for executing and pr
 
 ## The ZKVM
 
-The Nexus zkVM can prove any computation. For a Rust program:
-
-```rust
-#![cfg_attr(target_arch = "riscv32", no_std, no_main)]
-
-use nexus_rt::println;
-
-fn fib(n: u32) -> u32 {
-    match n {
-        0 => 0,
-        1 => 1,
-        _ => fib(n - 1) + fib(n - 2),
-    }
-}
-
-#[nexus_rt::main]
-fn main() {
-    let n = 7;
-    let result = fib(n);
-    assert_eq!(result, 13);
-    println!("fib({}) = {}", n, result);
-}
-```
+The [Nexus zkVM](/zkvm) can prove any computation. It is a general purpose VM bringing the best advances in ZK to the widest possible audience. 
