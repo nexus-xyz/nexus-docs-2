@@ -2,11 +2,18 @@
   "index": {
     "theme": {
       "breadcrumb": false
-    }
+    },
+    "title": "Introduction"
   },
-  "network": {},
-  "zkvm": { "title": "Using the zkVM" },
-  "specs": { "title": "Specifications" },
+  "network": {
+    "title": "The Nexus Network"
+  },
+  "zkvm": {
+    "title": "The Nexus zkVM"
+  },
+  "specs": {
+    "title": "Specifications"
+  },
   "svg": {
     "title": "SVG Images",
     "display": "hidden"
