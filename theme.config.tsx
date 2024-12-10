@@ -61,7 +61,7 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <div className="flex w-full flex-col items-center sm:items-start">
+      <div className="flex justify-center w-full flex-col items-center sm:items-start" style={{margin: '0 auto'}}>
         <p className="mt-6 text-xs" style={{ fontSize: "0.8rem" }}>
           © {new Date().getFullYear()} Nexus Laboratories, Inc.
         </p>
