@@ -7,11 +7,11 @@ Tailwind CSS uses [Next.js](https://nextjs.org/) and [Nextra](https://nextra.sit
 To run the project locally, first install the dependencies:
 
 ```bash
-npm install
+yarn
 ```
 
 Next, run the development server:
 
 ```bash
-npm run dev
+yarn dev
 ```
