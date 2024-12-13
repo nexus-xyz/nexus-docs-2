@@ -10,7 +10,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/nexus-xyz/nexus-zkvm",
   },
   chat: {
-    link: "https://twitter.com/NexusLabsHQ",
+    link: "https://x.com/nexuslabs",
     icon: (
       <svg width="24" height="24" viewBox="0 0 248 204">
         <path
