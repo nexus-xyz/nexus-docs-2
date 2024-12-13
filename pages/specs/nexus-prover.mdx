@@ -19,7 +19,7 @@ The following subsections provide an overview of each of these components.
 
 ### Initialization
 
-Let $P$ be a program which we want to execute in a verifiable manner. As described above, before loading $P$ into the memory starting at address $\mathtt{0x0000}$, the Nexus VM initially sets the contents of its global-purpose registers to 0 and the value of each memory location is assumed to be undefined. 
+Let $P$ be a program which we want to execute in a verifiable manner. As described above, before loading $P$ into the memory starting at address $\mathtt{0x0000}$, the Nexus VM initially sets the contents of its general-purpose registers to 0 and the value of each memory location is assumed to be undefined. 
 
 In order to enforce the consistency of the memory throughout the execution of the program $P$, the Nexus zkVM currently uses Merkle Trees [[M87](#references)] for memory checking together with the Poseidon hash function [[GKR21](#references)]. In this method, we compute a Merkle root associated with the current contents of the memory and we update its value whenever the contents of the memory change.
 
@@ -125,21 +125,21 @@ Finally, since the parameters for the Pedersen and Zeromorph commitment schemes 
 
 ### References
 
-[[BC23](https://eprint.iacr.org/2023/620)] Benedikt Bünz and Binyi Chen. “Protostar: Generic efficient accumulation/folding for special sound protocols”. In: Cryptology ePrint Archive (2023)
+[[BC23](https://eprint.iacr.org/2023/620)] Benedikt Bünz and Binyi Chen. “Protostar: Generic efficient accumulation/folding for special sound protocols”. In: Cryptology ePrint Archive (2023).
 
 [[BCTV14](https://eprint.iacr.org/2014/595)] Eli Ben-Sasson, Alessandro Chiesa, Eran Tromer, and Madars Virza. “Scalable Zero Knowledge via Cycles of Elliptic Curves”. In CRYPTO 2014.
 
-[[CT10](https://projects.csail.mit.edu/pcd/)] Alessandro Chiesa and Eran Tromer. “Proof-Carrying Data and Hearsay Arguments from Signature Cards.” In: ICS. Vol. 10. 2010, pp. 310–331
+[[CT10](https://projects.csail.mit.edu/pcd/)] Alessandro Chiesa and Eran Tromer. “Proof-Carrying Data and Hearsay Arguments from Signature Cards.” In: ICS. Vol. 10. 2010, pp. 310–331.
 
-[[GKR21](https://www.usenix.org/system/files/sec21-grassi.pdf)] Lorenzo Grassi, Dmitry Khovratovich, Christian Rechberger, Arnab Roy, and Markus Schofnegger. “Poseidon: A new hash function for Zero-Knowledge proof systems”. In: 30th USENIX Security Symposium (USENIX Security 21). 2021, pp. 519–535
+[[GKR21](https://www.usenix.org/system/files/sec21-grassi.pdf)] Lorenzo Grassi, Dmitry Khovratovich, Christian Rechberger, Arnab Roy, and Markus Schofnegger. “Poseidon: A new hash function for Zero-Knowledge proof systems”. In: 30th USENIX Security Symposium (USENIX Security 21). 2021, pp. 519–535.
 
 [[Gro16](https://doi.org/10.1007/978-3-662-49896-5_11)] Jens Groth. “On the Size of Pairing-Based Non-interactive Arguments”. In EUROCRYPT 2016.
 
-[[GWC19](https://eprint.iacr.org/2019/953)] Ariel Gabizon, Zachary J. Williamson, and Oana Ciobotaru. “PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge”. In: Cryptology ePrint Archive (2019)
+[[GWC19](https://eprint.iacr.org/2019/953)] Ariel Gabizon, Zachary J. Williamson, and Oana Ciobotaru. “PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge”. In: Cryptology ePrint Archive (2019).
 
-[[KS22](https://eprint.iacr.org/2022/1758)] Abhiram Kothapalli and Srinath Setty. “SuperNova: Proving universal machine executions without universal circuits”. In: Cryptology ePrint Archive (2022)
+[[KS22](https://eprint.iacr.org/2022/1758)] Abhiram Kothapalli and Srinath Setty. “SuperNova: Proving universal machine executions without universal circuits”. In: Cryptology ePrint Archive (2022).
 
-[[KS23](https://eprint.iacr.org/2023/1192)] Abhiram Kothapalli and Srinath Setty. “CycleFold: Folding-scheme-based recursive arguments over a cycle of elliptic curves”. In: Cryptology ePrint Archive (2023)
+[[KS23](https://eprint.iacr.org/2023/1192)] Abhiram Kothapalli and Srinath Setty. “CycleFold: Folding-scheme-based recursive arguments over a cycle of elliptic curves”. In: Cryptology ePrint Archive (2023).
 
 [[KST22](https://eprint.iacr.org/2021/370)] Abhiram Kothapalli, Srinath Setty, and Ioanna Tzialla. “Nova: Recursive zero-knowledge arguments from folding schemes”. In CRYPTO 2022.
 
@@ -147,14 +147,14 @@ Finally, since the parameters for the Pedersen and Zeromorph commitment schemes 
 
 [[KZG10](https://doi.org/10.1007/978-3-642-17373-8_11)] Aniket Kate, Gregory M. Zaverucha, and Ian Goldberg. “Constant-Size Commitments to Polynomials and Their Applications”. In ASIACRYPT 2010.
 
-[[M87](https://link.springer.com/chapter/10.1007/3-540-48184-2_32)] Ralph C Merkle. “A digital signature based on a conventional encryption function”. In CRYPTO 1987.
+[[M87](https://link.springer.com/chapter/10.1007/3-540-48184-2_32)] Ralph C. Merkle. “A digital signature based on a conventional encryption function”. In CRYPTO 1987.
 
 [[Set20](https://eprint.iacr.org/2019/550)] Srinath Setty. “Spartan: Efficient and general-purpose zkSNARKs without trusted setup”. In CRYPTO 2020.
 
 [[Val08](https://doi.org/10.1007/978-3-540-78524-8_1)] Paul Valiant. “Incrementally verifiable computation or proofs of knowledge imply time/space efficiency”. In TCC 2008.
 
 
-[TinyRAM]: (https://www.scipr-lab.org/doc/TinyRAM-spec-2.000.pdf)
-[RISCZero]: (https://www.risczero.com)
-[zkMISP]: (https://whitepaper.zkm.io/whitepaper1.2.pdf)
+[TinyRAM]: https://www.scipr-lab.org/doc/TinyRAM-spec-2.000.pdf
+[RISCZero]: https://www.risczero.com
+[zkMISP]: https://whitepaper.zkm.io/whitepaper1.2.pdf
 
