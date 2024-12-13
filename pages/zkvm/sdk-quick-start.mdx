@@ -110,7 +110,7 @@ fn main() {
     let pp: PP = PP::generate().expect("failed to generate parameters");
 
     let mut opts = CompileOpts::new(PACKAGE);
-    opts.set_memlimit(8); // use an 8mb memory
+    opts.set_memlimit(8); // use a 8mb memory
 
     println!("Compiling guest program...");
     let prover: Nova<Local> = Nova::compile(&opts).expect("failed to compile guest program");
