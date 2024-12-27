@@ -10,8 +10,15 @@ To run the project locally, first install the dependencies:
 npm install
 ```
 
+```bash
+yarn install
+```
+
 Next, run the development server:
 
 ```bash
 npm run dev
+```
+```bash
+yarn dev
 ```
